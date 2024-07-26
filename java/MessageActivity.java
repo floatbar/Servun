@@ -130,7 +130,7 @@ public class MessageActivity extends AppCompatActivity {
                         JSONObject jsonObject = new JSONObject(receivedData);
                         boolean success = jsonObject.getBoolean("success");
                         if (success) runOnUiThread(() -> editText.setText(""));
-                        else Toast.makeText(MessageActivity.this, getString(R.string.error_label), Toast.LENGTH_SHORT).show();
+                        else runOnUiThread(() -> Toast.makeText(MessageActivity.this, getString(R.string.error_label), Toast.LENGTH_SHORT).show());
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
