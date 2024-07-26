@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Servun</string>
+    <string name="udp_server_ipv4">192.168.1.32</string>
+    <string name="udp_server_port">6666</string>
+    <string name="message">Message</string>
+    <string name="error_label">An unexpected error occurred during the message operation.</string>
+</resources>
