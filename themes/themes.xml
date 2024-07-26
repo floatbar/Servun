@@ -6,7 +6,7 @@
         <item name="android:windowLightStatusBar">true</item>
     </style>
 
-    <style name="CustomEditTextHintStyle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+    <style name="EditTextStyle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
         <item name="android:textSize">20dp</item>
     </style>
 
