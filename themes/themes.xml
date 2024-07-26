@@ -7,7 +7,7 @@
     </style>
 
     <style name="EditTextStyle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
-        <item name="android:textSize">20dp</item>
+        <item name="android:textSize">19dp</item>
     </style>
 
     <style name="Theme.Servun" parent="Base.Theme.Servun" />
