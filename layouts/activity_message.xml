@@ -14,11 +14,11 @@
         android:layout_height="50dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/send_bg"
+        android:background="@drawable/send_background"
         android:padding="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/baseline_send_24" />
+        app:srcCompat="@drawable/baseline_send" />
 
     <EditText
         android:id="@+id/editText"
@@ -27,14 +27,14 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/custom_edit_text_shape"
+        android:background="@drawable/edit_text_background"
         android:ems="10"
         android:gravity="start|top"
         android:hint="@string/message"
         android:inputType="textMultiLine"
         android:paddingStart="13dp"
         android:paddingTop="11dp"
-        android:textAppearance="@style/CustomEditTextHintStyle"
+        android:textAppearance="@style/EditTextStyle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.0"
@@ -42,10 +42,9 @@
         app:layout_marginBaseline="8dp" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/listView"
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:divider="@null"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
