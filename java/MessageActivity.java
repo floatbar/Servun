@@ -32,7 +32,7 @@ public class MessageActivity extends AppCompatActivity {
 
         ImageView imageView = findViewById(R.id.imageView);
         EditText editText = findViewById(R.id.editText);
-        RecyclerView recyclerView = findViewById(R.id.listView);
+        RecyclerView recyclerView = findViewById(R.id.recyclerView);
 
         ArrayList<String> messages = new ArrayList<>();
         MessageAdapter[] adapter = {null};
