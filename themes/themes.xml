@@ -1,0 +1,14 @@
+<resources>
+    <style name="Base.Theme.Servun" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/blue</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="CustomEditTextHintStyle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="Theme.Servun" parent="Base.Theme.Servun" />
+</resources>
