@@ -10,7 +10,7 @@ const udpClients = [];
 
 udpServer.bind(process.env.UDP_SERVER_PORT, process.env.HOST);
 
-udpServer.on("error", (err)  => {
+udpServer.on("error", (err) => {
     console.error(err);
     udpServer.close();
 });
