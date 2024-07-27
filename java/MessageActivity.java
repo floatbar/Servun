@@ -113,13 +113,13 @@ public class MessageActivity extends AppCompatActivity {
             if (!message.isEmpty()) {
                 new Thread(() -> {
                     try (DatagramSocket socket = new DatagramSocket()) {
-                        InetAddress ipAddress = InetAddress.getByName(getString(R.string.udp_server_ipv4));
-                        int PORT = Integer.parseInt(getString(R.string.udp_server_port));
+                        InetAddress inetAddress = InetAddress.getByName(getString(R.string.udp_server_ipv4));
+                        int port = Integer.parseInt(getString(R.string.udp_server_port));
 
                         String body = "{\"type\": \"Send Any Message\", \"message\": \"" + message + "\"}";
                         byte[] sendData = body.getBytes();
 
-                        DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, ipAddress, PORT);
+                        DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, inetAddress, port);
                         socket.send(sendPacket);
 
                         byte[] receiveData = new byte[1024];
