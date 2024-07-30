@@ -36,8 +36,7 @@ udpServer.on("message", (data, socket) => {
                 udpServer.send(messageToBeSent, 0, messageToBeSent.length, socket.port, socket.address);
             }
         });
-    }
-    else if (message.type === "Receive All Messages") {
+    } else if (message.type === "Receive All Messages") {
         connection.query("SELECT message FROM udp_messages", [], (err, results) => {
             if (!err && results.length > 0) {
                 const messageToBeSent = JSON.stringify({ messages: results });
