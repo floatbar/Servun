@@ -56,4 +56,5 @@ const connection = mysql2.createPool({
 
 connection.getConnection((err) => {
     if (!err) console.log("MySQL server is running...");
+    else throw err;
 });
