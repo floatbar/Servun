@@ -31,8 +31,7 @@ udpServer.on("message", (data, socket) => {
             if (!err) {
                 messageToBeSent = JSON.stringify({ success: true, message: messagePlainText });
                 udpClients.forEach((udpClient) => udpServer.send(messageToBeSent, 0, messageToBeSent.length, udpClient.port, udpClient.address));
-            }
-            else {
+            } else {
                 messageToBeSent = JSON.stringify({ success: false });
                 udpServer.send(messageToBeSent, 0, messageToBeSent.length, socket.port, socket.address);
             }
